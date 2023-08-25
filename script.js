@@ -60,12 +60,7 @@ const answers=document.querySelectorAll('.answer');
 
   const getCheckAnswer=()=>{
     let answer;
-    // answers.forEach((curAnsEle) => {
-    //     if(curAnsEle.checked){
-    //         answer=curAnsEle.id;
-    //     }
-    
-    // });
+
 
     for(let i=0;i<answers.length;i++){
         if(answers[i].checked){
@@ -77,9 +72,7 @@ const answers=document.querySelectorAll('.answer');
   };
 
   const deselectAll=()=>{
-    // answers.forEach((curAnsEle)=>{
-    //     curAnsEle.checked=false
-    // });
+
 
     for (let i = 0; i < answers.length; i++) {
         answers[i].checked = false;
@@ -105,9 +98,9 @@ const answers=document.querySelectorAll('.answer');
 
         showScore.innerHTML=`
         <h3>Your score ${score}/${quizDB.length}  </h3>
-        <button class="btn" onclick="location.reload()"> play again </button>
+        <button class="btn" onclick="location.reload()"> play again </button>`;
          
-        `;
+        
 
         showScore.classList.remove('scoreArea');
        }
